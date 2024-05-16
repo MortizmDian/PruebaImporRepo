@@ -12,6 +12,9 @@ namespace PartsUnlimited.Models
 {
     public class Product
     {
+
+        //no pasa nadaaaaaaa
+        // voy a borrar todoooooooooo
         [Required]
         [Display(Name = "Sku Number")]
         public string SkuNumber { get; set; }
