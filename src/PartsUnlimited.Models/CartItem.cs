@@ -8,9 +8,11 @@ namespace PartsUnlimited.Models
 {
     public class CartItem
     {
+
+        //esto es un cambio
         [Key]
         public int CartItemId { get; set; }
-
+//aca otro pero salio azul
         [Required]
         public string CartId { get; set; }
         public int ProductId { get; set; }
