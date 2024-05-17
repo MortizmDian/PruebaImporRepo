@@ -7,9 +7,6 @@ Param(
     [string] $ResourceGroupName = '$defaultResourceGroupName$',
     [switch] $UploadArtifacts,
     [string] $StorageAccountName,
-    [string] $StorageContainerName = $ResourceGroupName.ToLowerInvariant() + '-stageartifacts',
-    [string] $TemplateFile = '$deployTemplateFileName$.json',
-    [string] $TemplateParametersFile = '$deployTemplateFileName$.parameters.json',
     [string] $ArtifactStagingDirectory = '.',
     [string] $DSCSourceFolder = 'DSC',
     [switch] $ValidateOnly
