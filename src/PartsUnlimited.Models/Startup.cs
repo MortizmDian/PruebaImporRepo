@@ -37,11 +37,7 @@ namespace PartsUnlimited.Models
             var sqlConnectionString = Configuration[ConfigurationPath.Combine("Data", "DefaultConnection", "ConnectionString")];
             if (!String.IsNullOrEmpty(sqlConnectionString))
             {
-                services.AddEntityFrameworkSqlServer()
-                      .AddDbContext<PartsUnlimitedContext>(options =>
-                      {
-                          options.UseSqlServer(sqlConnectionString);
-                      });
+               
             }
 
 
