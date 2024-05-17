@@ -13,7 +13,7 @@
     <IntermediateOutputPath>$(BaseIntermediateOutputPath)$(Configuration)\</IntermediateOutputPath>
     <ProjectReferencesOutputPath Condition=" '$(ProjectReferencesOutputPath)' == '' ">$(IntermediateOutputPath)ProjectReferences</ProjectReferencesOutputPath>
     <ProjectReferencesOutputPath Condition=" !HasTrailingSlash('$(ProjectReferencesOutputPath)') ">$(ProjectReferencesOutputPath)\</ProjectReferencesOutputPath>
-    <StageArtifacts Condition=" '$(StageArtifacts)' == '' ">true</StageArtifacts>
+    <StageArtifacts Condition3=" '$(StageArtifacts)' == '' ">true</StageArtifacts>
   </PropertyGroup>
 
   <PropertyGroup>
