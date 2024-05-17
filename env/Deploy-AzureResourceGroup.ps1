@@ -3,16 +3,7 @@
 #Requires -Module Azure.Storage
 
 Param(
-    [string] [Parameter(Mandatory=$true)] $ResourceGroupLocation,
-    [string] $ResourceGroupName = '$defaultResourceGroupName$',
-    [switch] $UploadArtifacts,
-    [string] $StorageAccountName,
-    [string] $StorageContainerName = $ResourceGroupName.ToLowerInvariant() + '-stageartifacts',
-    [string] $TemplateFile = '$deployTemplateFileName$.json',
-    [string] $TemplateParametersFile = '$deployTemplateFileName$.parameters.json',
-    [string] $ArtifactStagingDirectory = '.',
-    [string] $DSCSourceFolder = 'DSC',
-    [switch] $ValidateOnly
+  
 )
 
 Import-Module Azure -ErrorAction SilentlyContinue
